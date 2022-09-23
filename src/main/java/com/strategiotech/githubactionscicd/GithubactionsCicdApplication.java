@@ -15,7 +15,7 @@ public class GithubactionsCicdApplication {
     }
 
     @GetMapping("/hello")
-    public String sayHello(@RequestParam(value = "name", defaultValue = "Hello World") String name) {
+    public String hello(@RequestParam(value = "name", defaultValue = "Hello World") String name) {
         return name;
 
     }
