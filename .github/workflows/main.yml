@@ -48,7 +48,7 @@ jobs:
       - name: Download JAR
         uses: actions/download-artifact@v3
         with:
-          name: artifact
+          name: github-actions-artifact
       # deploy the artifact (JAR) into AWS Beanstalk
       - name: Deploy to EB
         uses: einaregilsson/beanstalk-deploy@v20
