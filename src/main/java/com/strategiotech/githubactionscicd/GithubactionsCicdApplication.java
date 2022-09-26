@@ -15,7 +15,7 @@ public class GithubactionsCicdApplication {
         SpringApplication.run(GithubactionsCicdApplication.class, args);
     }
 
-    @RequestMapping("/hello")
+    @RequestMapping("/")
     public String hello(@RequestParam(value = "name", defaultValue = "Hello World") String name) {
         return name;
 
