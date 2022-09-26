@@ -21,7 +21,7 @@ class GithubactionsCicdApplicationIntTest {
     private MockMvc mvc;
     @Test
     void hello() throws Exception {
-        RequestBuilder request = MockMvcRequestBuilders.get("/hello");
+        RequestBuilder request = MockMvcRequestBuilders.get("/");
         MvcResult result = mvc.perform(request).andReturn();
         assertEquals("Hello World", result.getResponse().getContentAsString());
     }
